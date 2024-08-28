@@ -1,5 +1,5 @@
 import './App.css'
-import { Navigate, Route, Routes, Link } from 'react-router-dom'
+import { Navigate, Route, Routes } from 'react-router-dom'
 
 import EmployeesView from './components/EmployeesView' 
 import EmployeeDetails from './components/EmployeeDetails' 

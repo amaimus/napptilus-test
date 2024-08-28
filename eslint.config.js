@@ -35,7 +35,8 @@ export default [
       ],
       "react/react-in-jsx-scope": 'off',
       indent: ["error", 2],
-      "jsx-quotes": ["error", "prefer-single"]
+      "jsx-quotes": ["error", "prefer-single"],
+      "react/prop-types": "off"
     },
   },
 ]
