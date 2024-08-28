@@ -1,11 +1,15 @@
+import EmployeeCard from './EmployeeCard'
 
 
-function EmployeesList() {
+function EmployeesList({employees}) {
 
   return (
-    <>
-      <p> Oompa Loompa List</p>
-    </>
+    <div className='grid grid-cols-3 gap-4'>
+      { employees && employees.map((employee) => (
+        <EmployeeCard key={employee.id} employee={employee} />
+      ))
+      }
+    </div>
   )
 }
 

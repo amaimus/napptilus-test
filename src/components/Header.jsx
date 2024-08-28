@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import avatarImage from '../assets/avatar.png'
 
-function EmployeesList() {
+function EmployeesView() {
 
   return (
     <header className='bg-gray-300'>
@@ -15,4 +15,4 @@ function EmployeesList() {
   )
 }
 
-export default EmployeesList
+export default EmployeesView
