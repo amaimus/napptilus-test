@@ -33,6 +33,9 @@ export default [
         'warn',
         { allowConstantExport: true },
       ],
+      "react/react-in-jsx-scope": 'off',
+      indent: ["error", 2],
+      "jsx-quotes": ["error", "prefer-single"]
     },
   },
 ]
