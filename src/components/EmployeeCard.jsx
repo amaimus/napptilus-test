@@ -11,7 +11,7 @@ function EmployeeCard({ employee }) {
   const employeeGender = gender[employee.gender]
 
   return (
-    <Link to={`/employees/${employee.id}`}>
+    <Link to={`/${employee.id}`}>
       <div className='cursor-pointer'>
         <img src={employee.image} alt='' />
         <p className='text-xl font-bold'>{employee.first_name} {employee.last_name}</p>

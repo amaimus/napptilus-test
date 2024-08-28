@@ -1,5 +1,5 @@
 import './App.css'
-import { Navigate, Route, Routes } from 'react-router-dom'
+import { Route, Routes } from 'react-router-dom'
 
 import EmployeesView from './components/EmployeesView' 
 import EmployeeDetails from './components/EmployeeDetails' 
@@ -14,9 +14,8 @@ function App() {
       <Header />
       
       <Routes>
-        <Route path='/' element={<Navigate to='/employees' />} />
-        <Route path='/employees' element={<EmployeesView />} />
-        <Route path='/employees/:employeeId' element={<EmployeeDetails />} />
+        <Route path='/' element={<EmployeesView />} />
+        <Route path='/:employeeId' element={<EmployeeDetails />} />
       </Routes>        
     </div>
   )
