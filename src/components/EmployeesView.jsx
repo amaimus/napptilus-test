@@ -1,5 +1,6 @@
 import { useEffect } from "react"
 import EmployeesList from "./EmployeesList"
+import EmployeesFilter from "./EmployeesFilter"
 
 import { useDispatch } from 'react-redux';
 import { addEmployee } from '../redux/employeesSlice';
@@ -25,7 +26,12 @@ function EmployeesView() {
 
   return (
     <div className='px-16'>
-      <div className='text-center my-8'>
+      <div className='mt-4'>
+        <EmployeesFilter />
+      </div>
+
+      
+      <div className='text-center mt-4 mb-8'>
         <p className='text-4xl'>Find your Oompa Loompa</p>
         <span className='text-xl text-muted'>There are more than 100k</span>
       </div>
