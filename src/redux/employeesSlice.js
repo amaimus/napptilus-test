@@ -5,6 +5,8 @@ import { createSlice } from '@reduxjs/toolkit';
 const initialState = {
   employees: [],
   filter: '',
+  page: 1,
+  totalPages: null,
 };
 
 const concatEmployeesData = (employees) => {
@@ -19,14 +21,20 @@ const employeesSlice = createSlice({
   initialState,
   reducers: {
     addEmployee(state, action) {
-      const data = concatEmployeesData(action.payload)
-      state.employees.push(data);
+      const data = concatEmployeesData(action.payload);
+      state.employees = [...state.employees, ...data];
     },
     setFilter(state, action) {
       state.filter = action.payload;
     },
+    setPage(state, action) {
+      state.page = action.payload;
+    },
+    setTotalPages(state, action) {
+      state.totalPages = action.payload;
+    }
   }
 });
 
-export const { addEmployee, setFilter } = employeesSlice.actions;
+export const { addEmployee, setFilter, setPage, setTotalPages } = employeesSlice.actions;
 export default employeesSlice.reducer;

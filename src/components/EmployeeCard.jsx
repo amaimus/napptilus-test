@@ -8,7 +8,7 @@ function EmployeeCard({ employee }) {
 
   return (
     <Link to={`/${employee.id}`}>
-      <div className='cursor-pointer'>
+      <div className='cursor-pointer text-left'>
         <img src={employee.image} alt='' />
         <p className='text-xl font-bold'>
           {employee.first_name} {employee.last_name}
